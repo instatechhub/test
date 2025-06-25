@@ -4,18 +4,20 @@ import './Navbar.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
+console.log(scrolled)
 
   return (
     <div className={`navbarContainer ${scrolled ? 'navbarScrolled' : ''}`}>
       <div className="navbarLogo">
-        <img src="/logo.png" alt="Tree House Logo" />
+        <img src="https://logopond.com/logos/dc5cc8314658dcbce4536affc4772f78.png" alt="Tree House Logo" />
       </div>
       <div className="navbarLinks">
         <a href="/">HOME</a>
