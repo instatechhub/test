@@ -12,7 +12,6 @@ useEffect(() => {
   return () => window.removeEventListener('scroll', handleScroll);
 }, []);
 
-console.log(scrolled)
 
   return (
     <div className={`navbarContainer ${scrolled ? 'navbarScrolled' : ''}`}>

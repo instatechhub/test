@@ -92,7 +92,6 @@ const Hero = () => {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="heroContainer">
         <video autoPlay muted loop className="heroVideo">
           <source
@@ -108,7 +107,6 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Search Section */}
       <div className="searchContainer">
         <div className="searchCard">
           <h2 className="searchTitle">
@@ -189,7 +187,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Welcome Section */}
+      
       <section className="welcomeSection">
         <div className="welcomeContainer">
           <div className="welcomeText">
@@ -374,7 +372,6 @@ const Hero = () => {
     <p>{pkg.description}</p>
   </div>
 </div>
-
         ))}
       </div>
     </section>

@@ -710,7 +710,6 @@
     flex: 1 1 100%;
   }
 }
-/* ANIMATIONS */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -722,7 +721,6 @@
   }
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
   .heroContent h1 {
     font-size: 2.8rem;
